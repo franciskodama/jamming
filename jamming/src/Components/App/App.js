@@ -15,12 +15,17 @@ class App extends React.Component {
       ],
       playlistName: 'Motherfuckers',
       playlistTracks: [
-        {name: 'name1', artist:'Kodama', album: 'Francisland', id: '01'}, 
-        {name: 'name2', artist:'Zorzo', album: 'Mariland', id: '02'},
-        {name: 'name3', artist:'Zorzete', album: 'Zorzoland', id: '03'}
+        {name: 'playlistName1', artist:'playlistKodama', album: 'playlistFrancisland', id: '04'}, 
+        {name: 'playlistname2', artist:'playlistZorzo', album: 'playlistMariland', id: '05'},
+        {name: 'playlistname3', artist:'playlistZorzete', album: 'playlistZorzoland', id: '06'}
       ]
     }
   }
+
+  addTrack() {
+    
+  }
+
 
   render() {
     return (
@@ -30,7 +35,8 @@ class App extends React.Component {
             <SearchBar />
           <div className="App-playlist">
             <SearchResults searchResults={this.state.searchResults}/>
-            <Playlist playlistName={this.state.playlistName} playlistTracks={this.state.playlistTracks} />
+            <Playlist playlistName={this.state.playlistName}
+                      playlistTracks={this.state.playlistTracks} />
           </div>
         </div>
       </div>
